@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/89001a9571.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="app">
+            <div class="screen">
+                <div class="screen-welcome msg ">
+                    <div class="screen-p screen-welcome__text blinking">Please enter your card </div>
+                    <div class="screen-welcome__weather">
+                        <div class="screen-welcome__weather-item screen-welcome__weather-location">Newport</div>
+
+                        <div class="screen-welcome__weather-item screen-welcome__weather-degree">22°</div>
+                        <div class="screen-welcome__weather-item screen-welcome__weather-celcius">C</div>
+                        <!-- <div class="screen-welcome__weather-item screen-welcome__weather-icon">
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <div class="screen-error msg collapse">
+                    <div class="screen-p">Sorry you cant do it now </div>
+                    <div class="screen-p">Would you like to eject your card and start over </div>
+                    <div class="eject">EJECT CARD</div>
+
+                    <div class="screen-go-back screen-go-back-3">Go Back</div>
+
+                </div>
+                <div class="screen-enter-pin msg collapse">
+                    <div class="screen-p">Welcome please enter your PIN </div>
+                    <div class="screen-pin">----</div>
+                </div>
+                <div class="screen-actions msg collapse">
+                    <div class="screen-p name">What would you like to do today %name% </div>
+                    <div class="screen-actions-btns">
+                        <div class="screen-actions-btn screen-actions-btn-w">
+                            Withdraw my money
+                        </div>
+                        <div class="screen-actions-btn screen-actions-btn-b">
+                            Check account balance
+                        </div>
+
+                    </div>
+                </div>
+                <div class="screen-withdrowal msg collapse">
+                    <div class="screen-p">
+                        <span class="withdrowalGoBack">Go Back</span> How much would you like to withdraw
+                    </div>
+                    <div class="screen-withdrowal__values">
+
+                        <div class="screen-withdrowal__values-line">
+                            <div class="screen-withdrowal__value _10">
+                                10
+                            </div>
+                            <div class="screen-withdrowal__value _100">
+                                100
+                            </div>
+
+                        </div>
+                        <div class="screen-withdrowal__values-line">
+                            <div class="screen-withdrowal__value _20">
+                                20
+                            </div>
+                            <div class="screen-withdrowal__value _150">
+                                150
+                            </div>
+
+                        </div>
+                        <div class="screen-withdrowal__values-line">
+                            <div class="screen-withdrowal__value _50">
+                                50
+                            </div>
+                            <div class="screen-withdrowal__value _Other">
+                                Other
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="screen-other-amount msg collapse">
+                    <div class="screen-other__head">
+                        <div class="screen-go-back screen-go-back-2">Go Back</div>
+                        <div class="screen-other__head-msg">How much would you like to withdrow</div>
+                    </div>
+                    <div class="screen-other-amount_box">
+                        <div class="screen-other__value screen-pin">----</div>
+                        <div class="screen-other__confirm">CONFIRM</div>
+                    </div>
+                </div>
+
+                <div class="screen-history msg collapse">
+                    <div class="screen-history-head">
+                        <div class="screen-go-back screen-go-back-1">Go Back</div>
+                        <div class="screen-p screen-history-balance">
+                            Your avalible balance is £ <span class="balance-value">1000</span>
+                        </div>
+
+                    </div>
+
+                    <div class="screen-history-entries">
+                        <!-- <div class="screen-history-entry">
+                            <div class="screen-history-entry-1__date">22 July 2021 17:59</div>
+                            <div class="screen-history-entry-1__amount">£ 20</div>
+                        </div> -->
+                        <!-- <div class="screen-history-entry">
+                            <div class="screen-history-entry-1__date">22 July 2021 17:59</div>
+                            <div class="screen-history-entry-1__amount">£ 20</div>
+                        </div>
+                        <div class="screen-history-entry">
+                            <div class="screen-history-entry-1__date">22 July 2021 17:59</div>
+                            <div class="screen-history-entry-1__amount">£ 20</div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+                <div class="screen-processing msg collapse">
+                    <div class="processing">
+                        Procesing
+                    </div>
+                    <div class="succes-with">
+                        You have widthdrawn £ <p class="succes-with__amount">xx</p>>
+                    </div>
+                </div>
+                <div class="screen-with-error msg collapse">
+                    <div class="screen-with-error__msg">
+                        You can only withdraw multiples of 10
+                    </div>
+
+                </div>
+                <div class="screen-with-error-2 msg collapse">
+                    <div class="screen-with-error__msg2">
+                        You dont have sufficient amount
+                    </div>
+
+                </div>
+                <div class="screen-goodbye msg collapse">
+                    Goodbye %name%
+                </div>
+
+            </div>
+            <div class="keyboard">
+                <div class="line-1 line">
+                    <div class="btn btn-1">1</div>
+                    <div class="btn btn-2">2</div>
+                    <div class="btn btn-3">3</div>
+                </div>
+                <div class="line-2 line">
+                    <div class="btn btn-4">4</div>
+                    <div class="btn btn-5">5</div>
+                    <div class="btn btn-6">6</div>
+                </div>
+                <div class="line-3 line">
+                    <div class="btn btn-7">7</div>
+                    <div class="btn btn-8">8</div>
+                    <div class="btn btn-9">9</div>
+                </div>
+                <div class="line-4 line">
+                    <div class="btn btn-cancel">C</div>
+                    <div class="btn btn-0">0</div>
+                    <div class="btn btn-enter">E</div>
+
+                </div>
+            </div>
+            <div class="users">
+                <div class="user-1 user move-up-1"><i class="fa fa-cc-visa user-icon" aria-hidden="true"></i>
+                    <div class="user-test">
+                        <p>PIN 1234</p>
+                    </div>
+                </div>
+                <div class="user-2 user move-up-2"><i class="fa fa-cc-mastercard user-icon" aria-hidden="true"></i>
+                    <div class="user-test">
+                        <p>PIN 3333</p>
+                    </div>
+                </div>
+                <div class="user-3 user move-up-3"><i class="fa fa-cc-amex user-icon" aria-hidden="true"></i>
+
+                    <div class="user-test">
+                        <p>PIN 2222</p>
+                    </div>
+                </div>
+                <!-- <div class="user-2 user move-up-2">PIN 3333</div>
+                <div class="user-3 user move-up-3">PIN 2222</div> -->
+            </div>
+            <div class="eject-card">
+                <div class="eject">
+                    EJECT CARD
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
